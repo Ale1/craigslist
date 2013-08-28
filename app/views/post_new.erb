@@ -1,0 +1,19 @@
+<div class="container">
+<h1>Create new post in category <%= @category %></h1>
+
+
+
+<%= params.inspect %>
+<%= secret_form %>
+ <p> <select name="category" form="myform"> 
+       <%= dropdown_cheat(@category,@category)%>  
+       </option></select> </p>
+ <p> Title: <input type="text" name="title"> </p> 
+ <p> Description: <input type="text" name="description"> </p>
+ 
+<input type="submit" value="submit" > 
+</form>
+
+
+
+

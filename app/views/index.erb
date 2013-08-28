@@ -1,0 +1,13 @@
+
+<div class="container">
+  <h1>Welcome to Alejandro's list of Craig!</h1>
+  <p>The go-to list for patrons of exceptional refinement and exquisite taste!</p>
+
+<p> Click on a section to view posts </p>
+
+<% @section_names.each do |name| %> 
+  <%= linker(name.to_s,name.to_s) %>
+<% end %>
+
+  </div>
+

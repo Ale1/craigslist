@@ -1,0 +1,18 @@
+<div class="container">
+<h1>These are the posts for 
+<%= @category %>
+</h1>
+
+
+<% @rel_posts.each do |entry| %>
+<div class="container2">
+ <%= "title: "+ entry.first %> <br>
+ <%= "desc: " + entry.last %> 
+</div>
+<% end %>
+
+
+
+<div class ="container2">
+  <p> <%=linker("/post_new/"+"#{@category}","create post in "+"#{@category}") %> </p> 
+</div>
